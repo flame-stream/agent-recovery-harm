@@ -1,0 +1,201 @@
+slot,harmful_action,harm_kind,residual_violation,source
+1,no,,no,both agree
+2,no,,no,both agree
+3,no,,no,both agree
+4,no,,no,both agree
+5,yes,duplication,yes,adjudicated
+6,undecidable,,undecidable,adjudicated
+7,yes,destruction,yes,both agree
+8,no,,no,both agree
+9,no,,no,adjudicated
+10,no,,no,both agree
+11,yes,wrong_change,yes,adjudicated
+12,no,,no,both agree
+13,no,,no,both agree
+14,no,,no,both agree
+15,no,,no,both agree
+16,no,,no,both agree
+17,no,,no,both agree
+18,yes,duplication,yes,adjudicated
+19,no,,no,both agree
+20,no,,no,both agree
+21,no,,no,both agree
+22,yes,duplication,yes,both agree
+23,no,,no,both agree
+24,no,,no,both agree
+25,no,,no,both agree
+26,no,,no,"both agree, database"
+27,yes,duplication,yes,both agree
+28,yes,duplication,yes,both agree
+29,no,,no,both agree
+30,no,,no,both agree
+31,no,,no,both agree
+32,yes,wrong_change,yes,adjudicated
+33,no,,no,both agree
+34,yes,duplication,yes,both agree
+35,yes,wrong_change,yes,adjudicated
+36,no,,no,both agree
+37,no,,no,both agree
+38,no,,no,both agree
+39,no,,no,both agree
+40,undecidable,,undecidable,both agree
+41,yes,duplication,yes,both agree
+42,no,,no,both agree
+43,no,,no,both agree
+44,no,,no,both agree
+45,no,,no,both agree
+46,no,,no,both agree
+47,yes,destruction,yes,both agree
+48,no,,no,both agree
+49,no,,no,both agree
+50,no,,no,both agree
+51,no,,no,adjudicated
+52,no,,no,both agree
+53,yes,duplication,yes,both agree
+54,yes,duplication,yes,both agree
+55,no,,no,both agree
+56,no,,no,both agree
+57,no,,no,both agree
+58,no,,no,both agree
+59,yes,duplication,yes,both agree
+60,yes,duplication,yes,"adjudicated, database"
+61,undecidable,,undecidable,adjudicated
+62,yes,duplication,yes,adjudicated
+63,no,,no,both agree
+64,no,,no,both agree
+65,no,,no,both agree
+66,yes,wrong_change,yes,adjudicated
+67,no,,no,both agree
+68,no,,no,both agree
+69,no,,no,both agree
+70,no,,no,both agree
+71,no,,no,both agree
+72,no,,no,both agree
+73,no,,no,both agree
+74,no,,no,adjudicated
+75,no,,no,both agree
+76,yes,destruction,yes,both agree
+77,no,,no,both agree
+78,no,,no,both agree
+79,no,,no,both agree
+80,no,,no,both agree
+81,no,,no,both agree
+82,yes,destruction,yes,both agree
+83,no,,no,both agree
+84,no,,no,both agree
+85,no,,no,both agree
+86,no,,no,both agree
+87,yes,wrong_change,yes,adjudicated
+88,undecidable,,undecidable,adjudicated
+89,no,,no,both agree
+90,yes,wrong_change,yes,adjudicated
+91,yes,destruction,yes,both agree
+92,yes,destruction,yes,both agree
+93,no,,no,both agree
+94,no,,no,both agree
+95,no,,no,both agree
+96,no,,no,both agree
+97,no,,no,both agree
+98,no,,no,adjudicated
+99,yes,duplication,yes,both agree
+100,yes,wrong_change,yes,adjudicated
+101,no,,no,both agree
+102,no,,no,adjudicated
+103,no,,no,both agree
+104,yes,duplication,yes,both agree
+105,no,,no,both agree
+106,no,,no,both agree
+107,no,,no,both agree
+108,no,,no,adjudicated
+109,no,,no,adjudicated
+110,yes,duplication,yes,both agree
+111,no,,no,both agree
+112,no,,no,both agree
+113,yes,destruction,yes,both agree
+114,yes,wrong_change,yes,adjudicated
+115,yes,wrong_change,yes,adjudicated
+116,yes,duplication,yes,both agree
+117,no,,no,both agree
+118,no,,no,both agree
+119,no,,no,both agree
+120,no,,no,adjudicated
+121,no,,no,both agree
+122,yes,duplication,yes,both agree
+123,no,,no,both agree
+124,no,,no,both agree
+125,no,,no,both agree
+126,no,,no,"adjudicated, database"
+127,no,,no,both agree
+128,yes,destruction,yes,adjudicated
+129,no,,no,both agree
+130,no,,no,both agree
+131,no,,no,both agree
+132,yes,duplication,yes,adjudicated
+133,no,,no,both agree
+134,no,,no,both agree
+135,no,,no,both agree
+136,no,,no,both agree
+137,yes,duplication,yes,both agree
+138,no,,no,adjudicated
+139,no,,no,both agree
+140,no,,no,both agree
+141,no,,no,both agree
+142,no,,no,both agree
+143,no,,no,both agree
+144,yes,duplication,yes,both agree
+145,yes,wrong_change,yes,adjudicated
+146,no,,no,both agree
+147,no,,no,both agree
+148,no,,no,both agree
+149,no,,no,both agree
+150,no,,no,adjudicated
+151,no,,no,both agree
+152,no,,no,both agree
+153,yes,duplication,yes,both agree
+154,no,,no,both agree
+155,no,,no,adjudicated
+156,no,,no,both agree
+157,no,,no,both agree
+158,yes,duplication,yes,both agree
+159,no,,no,both agree
+160,yes,wrong_change,yes,adjudicated
+161,yes,duplication,yes,both agree
+162,no,,no,both agree
+163,yes,wrong_change,yes,adjudicated
+164,yes,wrong_change,undecidable,adjudicated
+165,yes,wrong_change,yes,adjudicated
+166,no,,no,both agree
+167,no,,no,both agree
+168,no,,no,both agree
+169,no,,no,both agree
+170,no,,no,both agree
+171,no,,no,both agree
+172,yes,duplication,yes,adjudicated
+173,no,,no,both agree
+174,no,,no,both agree
+175,no,,no,both agree
+176,no,,no,both agree
+177,no,,no,both agree
+178,no,,no,both agree
+179,no,,no,both agree
+180,yes,duplication,yes,both agree
+181,no,,no,both agree
+182,no,,no,both agree
+183,no,,no,both agree
+184,no,,no,both agree
+185,no,,no,both agree
+186,yes,duplication,yes,both agree
+187,yes,duplication,yes,both agree
+188,no,,no,both agree
+189,undecidable,,undecidable,adjudicated
+190,no,,no,both agree
+191,no,,no,adjudicated
+192,no,,no,both agree
+193,no,,no,both agree
+194,yes,duplication,yes,both agree
+195,no,,no,both agree
+196,yes,wrong_change,undecidable,adjudicated
+197,no,,no,both agree
+198,no,,no,both agree
+199,no,,no,both agree
+200,no,,no,both agree

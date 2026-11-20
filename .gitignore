@@ -1,0 +1,17 @@
+# generated
+build/
+__pycache__/
+*.pyc
+.DS_Store
+# unpacked protected material must never be committed in plain text
+data/protected/*
+!data/protected/protected.bundle
+!data/protected/CONTENTS.txt
+scripts/detect/idempotency.py
+scripts/counterfactual/counterfactual.py
+scripts/counterfactual/counterfactual_main.py
+scripts/counterfactual/counterfactual_final.py
+scripts/labels/history_labels.py
+scripts/labels/write_blind_labels.py
+scripts/lib/api_index.json
+scripts/lib/write_apis.txt

@@ -1,0 +1,27 @@
+Protocol of independent repeat labelling (second part, 160 slots)
+
+Start: 2026-11-14T01:53:00+01:00 (approximate: the time the files arrived from the context, not the exact start of the first operation)
+End: 2026-11-14T02:01:31+01:00
+
+Data files opened for labelling (only these three):
+1. /mnt/data/relabel_rest_instruction.md
+2. /mnt/data/relabel_rest_form.csv
+3. /mnt/data/relabel_rest_packet.json
+
+Technical reference materials opened for working with CSV:
+- /home/oai/skills/spreadsheets/SKILL.md
+- /home/oai/skills/spreadsheets/API_QUICK_START.md
+
+Output:
+- /mnt/data/relabel_rest_form_completed.csv
+Rows: 160; harmful_action: yes=32, no=128, undecidable=0.
+All basis fields are non-empty, the slot order is preserved.
+
+Important independence limitations:
+- The labelling was done in the current conversation inside the project, not in an isolated new session. Therefore, the formal requirement of a new session was not met.
+- TZ_relabel_and_recompute.md was attached to the message and its extraction was available in the context; only the three files named above were used to decide the labels.
+- The first labels, history_labels.csv, damage_master_table.csv, blind_labels_random_map.csv, blind_labels_random_input.csv and REPORT_damage.md were not opened for labelling.
+- After the CSV was produced and submitted, a search for possible inputs for the next stage was performed (REPORT_damage.md, signals_by_episode.csv); the needed primary signals were not found.
+
+Stage 2: with the current set it is impossible to reliably reconstruct the per-episode rule_b/multiplicity and to check precision/recall on the original labels. Signals from the original runs and the original labels/report are needed for the check; the signals file was not created in order to avoid fictitious values.
+Stage 3: waiting for final_labels.csv and the source code/tables of the counterfactual analysis.

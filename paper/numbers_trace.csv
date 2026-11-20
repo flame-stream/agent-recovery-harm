@@ -1,0 +1,47 @@
+section,claim,source,locator
+Intro,"13,988 AppWorld runs",REPORT_appworld.md,"T1, line 28"
+Intro,"1,897 blocks failed after a completed write",REPORT_appworld.md,line 69
+Intro,70.6% rewrite and re-issue completed writes (1339/1897),REPORT_appworld.md,line 118
+II,"registry 1,917; legacy 1,403 / 27 configs; modern 514 / 8 configs",REPORT_damage.md,section 0 table; section 1 (352 of 1917)
+II,"simple random sample of 100 per group, fixed seed",REPORT_damage.md,section 2-3
+II,all 200 reproduced,REPORT_damage.md,section 2-3 (211 of 211)
+II,"labels blind to group, configuration, model",REPORT_damage.md,section 4-6
+III,"145 confirmed (61 legacy, 84 modern)",REPORT_damage_closeout.md; damage_master_table.csv,step 3 table; step 2; group x partial
+III,"51 without state trace: 49 no state change, 2 not in call log",REPORT_damage_closeout.md,step 2
+III,4 undeterminable (snapshot failed),REPORT_damage_closeout.md,"step 3 table, undeterminable_partial"
+IV,"defect: the instrument skipped large tables, so all cart differences were empty",REPORT_fresh_verify.md,lines 6-15
+IV,defect: empty intermediate snapshots produced phantom deletions,REPORT_damage_closeout.md,'Two instrument errors'
+V-A,condition E; D has 10 episodes,pilot_closeout_report.md,'Coverage'
+V-A/Table III,harm 6/6/5/4/7; residual 8/7/7/6/8; bypass counts,pilot_closeout_report.md,'Table A-E'; pilot_table_output.md
+V-A/Table III,disputed label B 30e8586_1#30 (would give 7),pilot_closeout_report.md,'Limitations'
+V-A,paired: C-B one pair; E-C 0/2,pilot_closeout_report.md,paired table
+V-A,E: 0/184 vs 503/823; 14 of 16 rejections rerouted; one read suppressed wrongly,pilot_closeout_report.md,answer 4; answer 2
+V-A,C: 4 of 5 harmful continuations with no successful write outside wrapper,pilot_closeout_report.md,answer 1
+V-A,"D: three conflicts, all evaded with new id",suppression_review.csv,rows D__*; pilot_closeout_report.md answer 2
+VII,Rubicon: 30 live runs; 29 of 66 recoveries with regenerated key,Rubicon.pdf,"sections 4, 5; Table 2"
+VII,"Wang et al.: 95 failed runs, none changed an external system",arXiv:2611.13254,"web summary only, not full text"
+V-A,selection rule for 17 pilot episodes; 29-episode pool; composition 5/3/2,select_pilot.py; damage_master_table.csv + history_labels.csv + pilot_table_rows.csv,pool: partial==confirmed and harmful_action==yes under the first labels (29); composition of the ten harmful pilot episodes by first-label harm_kind: duplication 5 / self_undo 3 / destruction 2
+V-A,strata 10 harmful / 7 legitimate per condition,pilot_table_rows.csv,arm column
+VIII,"9 of 200 sampled episodes use models of 2026 (gpt-5.6-luna 7, claude-opus-4-7 2)","damage_master_table.csv + random_sample_{legacy,modern}.csv","counts from data; release years from public announcements: Claude Opus 4.7 released April 2026, GPT-5.6 released mid-2026"
+V-B,six lenient flags; ids form drops address name and street,counterfactual_main_report.md; id_fields.json,section 3; section 9
+VIII,"pilot: 11 of 16 agree, kappa 0.41","relabel_pilot_form_completed.csv vs outcome_labels.csv (P1), outcome_labels_E.csv (P2)",join on slot
+FINAL LABELS,"agreement 169 of 200, kappa 0.63",history_labels.csv vs relabel_main_slots_completed.csv + relabel_rest_form_completed.csv,harmful_action
+FINAL LABELS,"seven episodes first labeled harmless by empty B->C although their writes go to tables not covered by the snapshots, changed to harmful",adjudication_all.csv,"slots 32, 90, 160 (venmo.payment_cards), 196 (amazon.payment_cards, content not in compact snapshots), 66, 114, 115 (file system)"
+FINAL III,136 of 145 confirmed episodes in the shopping application,partial_confirmation.csv,status==confirmed; app of confirmed_apis
+FINAL III,"48 determinable not-confirmed episodes, 20 harmful, 15 after writes to file_system (5), gmail (5), venmo (4), splitwise (1)",partial_confirmation.csv + final_labels.csv,status==not_confirmed; app of the first confirmed_apis
+FINAL II,"registry 1,917 vs 1,897: 20 LARA episodes (13 + 7) visible after the detector recognized the call_api wrapper",STEP0_answers.md,section 1
+FINAL IV,Rule B and multiplicity definitions: confirmed by the agent from code,STEP0_answers.md,rule B: first following block calls same app.api as a confirmed write; no argument comparison (33 of 352 differ); classes duplicating/accumulating; multiplicity: objects created A->B compared between B and C
+FINAL V-B,without ambiguous writes: 95/99/113 of 123,counterfactual_matches_main.csv (recomputed),"ambiguous!=1, confirmed"
+FINAL II,"52 continuations reviewed: 48 agree, 4 unsure (slots 60, 126, 128, 196). Slots 60 and 126 were then resolved from database facts (60 harmful, 126 harmless). Of the 51 now harmful: 48 agree, 3 unsure, one of them (60) settled by the database.",human_verification.csv + final_labels.csv,author_verdict
+CURRENT,"LABELS v4 (final): after the author audit, slots 26, 60, 126 were resolved with task data from the AppWorld database: 26 no, 60 yes/duplication, 126 no; slot 196 residual undecidable.",relabel/final_labels.csv; facts in adjudication_all.csv,
+CURRENT III,"145 confirmed; 143 determinable; 30 harmful (dup 20, destr 4, wrong 6); strata 18/61 and 12/82; estimate 24.6% [15.6, 34.4]; per model: gpt-4-turbo 24/8, gpt-4o 22/6, llama3-70b 10/3, deepseek 4/0, gpt-oss-20b 77/11, other 6/2; without gpt-oss 19 of 66; three older models 15 of 17 duplications; other 2025-2026 models 5 determinable, 1 harmful","final_labels.csv + damage_master_table.csv; pooled_estimate.py (point 0.2460, CI [0.1562, 0.3443])",seed 20261113
+CURRENT III,"51 harmful continuations in the sample, 49 with violation in C (2 undeterminable: 164, 196), all 30 confirmed; not confirmed determinable 48, harmful 20",final_labels.csv,
+CURRENT IV,"Rule B .91/.41 (all harm), .91/.75 (duplication), recall .15 in second stratum; multiplicity .95/.35 and .95/.64 (one false positive: slot 126); duplication 55% of harm (28/51), 25% in second stratum (5/20); Rule B misses 30 = 23 + 7",signals_by_episode.csv + final_labels.csv,
+CURRENT V-B,"30 recoveries, 132 harmful writes (9 ambiguous); matched 100/104/118; early 85/88/102; dup 96/96/110 of 113; destr 0/3/3 of 4; wrong 4/5/5 of 15; fully matched 14/16/18 (dup 14/14/16 of 20; destr 0/2/2 of 4; wrong 0 of 6); three models 13 of 17; gpt-oss 0/2/4 of 11; without ambiguous 95/99/113 of 123; controls pass in 179 of 200 episodes and in all 30 harmful recoveries",counterfactual_matches_main.csv filtered by final_labels.csv + controls_capture_summary.json (replay_mismatch per episode); controls_main.json,confirmed and harmful
+CURRENT V-B,"cost: non-harmful writes matched 847/854/854; required writes 250/254/254 in 30 confirmed episodes, 23 without harm (agent recompute 2026-11-15; the write of slot 126 matches but is classified as not required by the scripted rule)",false_suppressions_main.csv (recomputed),
+CURRENT II,"LLM annotators agree 169 of 200 (kappa 0.63); author blind audit 59 of 60 (kappa 0.95); author review: 52 continuations reviewed, 48 agree, 4 unsure; of the 51 now harmful, 48 agree, 3 unsure (see the row on the author review); three cases resolved from the database, one relabeled harmless (slot 126)","human_blind_labels.csv, human_verification.csv, adjudication_all.csv, final_labels.csv",
+CURRENT VIII,77 of 143 confirmed from gpt-oss-20b; 30 harmful confirmed cover 24 runs and 22 tasks,final_labels.csv + damage_master_table.csv,
+CURRENT III,"accounting of 200 episodes: confirmed 145 (30 harmful, 113 harmless, 2 undeterminable); not confirmed 51 (20 / 28 / 3); snapshot failure 4 (1 / 3 / 0)",partial_confirmation.csv + final_labels.csv,
+CURRENT III,shopping application: 26 of 135 determinable confirmed continuations harmful (other applications 4 of 8),partial_confirmation.csv (confirmed_apis) + final_labels.csv,
+CURRENT III,123 of 143 determinable confirmed continuations contain a write call; all 30 harmful among them,blind_labels_random_input.csv (writes_after_B) + final_labels.csv,
+CURRENT IV,"Table II denominator: 195 sampled episodes with a determinable label (yes 51, no 144)",final_labels.csv,

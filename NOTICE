@@ -1,0 +1,10 @@
+Agent Recovery Gone Wrong: data, labels, and scripts
+Copyright 2026 Artem Trofimov and Boris Novikov
+
+The code in this repository is licensed under the Apache License, Version 2.0 (LICENSE).
+The open data and labels in data/ (outside data/protected/) are licensed under
+CC BY 4.0 (LICENSE-DATA).
+
+data/protected/protected.bundle contains material derived from AppWorld
+(https://github.com/StonyBrookNLP/appworld), Copyright the AppWorld authors, distributed
+under the AppWorld terms (see LICENSE-DATA and DATA_POLICY.md).

@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use these data or scripts, please cite the paper."
+title: "Agent Recovery Gone Wrong: Measuring Harm Beyond Duplicate Calls — data, labels, and scripts"
+authors:
+  - family-names: Trofimov
+    given-names: Artem
+    affiliation: AVIV Group
+    email: artemtrofimov@acm.org
+  - family-names: Novikov
+    given-names: Boris
+    affiliation: Independent Researcher
+license: Apache-2.0
+preferred-citation:
+  type: unpublished
+  title: "Agent Recovery Gone Wrong: Measuring Harm Beyond Duplicate Calls"
+  authors:
+    - family-names: Trofimov
+      given-names: Artem
+    - family-names: Novikov
+      given-names: Boris
+  year: 2026

@@ -1,0 +1,13 @@
+# make tables / make check: Python >= 3.11, standard library only.
+#
+# make unpack, and re-running the replay or the pilot:
+#   Python 3.11 (tested with 3.11.16)
+#   two AppWorld installations, one per data version used by the recorded runs:
+#     appworld==0.1.0            data 0.1.0  (official runs and most leaderboard runs)
+#     appworld 0.2.0.dev0        data 0.2.0  (source checkout, commit f31e671ea7e5acc5eb093c0d2761aee3b7a6567b)
+#   followed by `appworld install` and `appworld download data` in each environment.
+appworld==0.1.0
+# pilot only:
+requests
+tiktoken
+pendulum

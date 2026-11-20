@@ -1,0 +1,57 @@
+{
+ "model": {
+  "id": "gpt-oss-20b",
+  "quant": "MXFP4-Q8",
+  "server": "LM Studio (local, OpenAI-compatible)",
+  "base_url": "http://<local-server>/v1",
+  "platform": "MLX / Apple Silicon"
+ },
+ "generation": {
+  "temperature": 0,
+  "seed": 123,
+  "max_tokens": 2048,
+  "stop": null,
+  "reasoning_effort": "medium (via a system message 'Reasoning: medium')"
+ },
+ "labelling_generation": {
+  "temperature": 0,
+  "seed": 123,
+  "max_tokens": 3072
+ },
+ "prompt": {
+  "harness": "legacy ReAct Code Agent",
+  "max_prompt_chars": 50000,
+  "truncation": "as in AppworldPromptedLMModel.truncate_input",
+  "code_adapter": "normalise_harmony + extract_code (channel commentary to=python)"
+ },
+ "limits": {
+  "max_blocks_per_continuation": 12,
+  "one_continuation_per_episode_per_condition": true
+ },
+ "conditions": {
+  "A": "original block, without labels and enforcement",
+  "B": "block labelled by the model; the wrapper only observes",
+  "C": "block labelled by the model; the wrapper enforces",
+  "D": "original block with reference labels; the wrapper enforces",
+  "E": "block labelled by the model; the wrapper enforces, direct write calls are rejected (operation_id required)"
+ },
+ "stands": {
+  "v010": {
+   "code": "0.1.0",
+   "data": "0.1.0"
+  },
+  "v020": {
+   "code": "0.2.0.dev0",
+   "data": "0.2.0"
+  }
+ },
+ "freeze": "c2b50beb32f064cf171ad79063d492334cf4e521d595c64a2ddac6eb9ff5f205",
+ "effects_contract": [
+  "new id -> execute",
+  "completed id, same api and arguments -> return the saved result",
+  "completed id, different api or arguments -> operation_conflict",
+  "reliable refusal without effect (HTTP 4xx) -> repeat under the same id allowed",
+  "unknown outcome -> unresolved, auto-repeat forbidden"
+ ],
+ "effects_sha": "2a218ade2c4271ef48cbf8aa05e9a9844cd58c4a0ec9345568ec35b96a0c96b6"
+}

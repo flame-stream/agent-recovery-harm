@@ -1,0 +1,722 @@
+[
+ {
+  "key": "confirmed",
+  "expected": 145,
+  "claim": "TZ: confirmed of 200"
+ },
+ {
+  "key": "confirmed.determinable",
+  "expected": 143,
+  "claim": "TZ: confirmed with determinable harm"
+ },
+ {
+  "key": "confirmed.harmful",
+  "expected": 30,
+  "claim": "TZ: harmful among them [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "confirmed.kind.duplication",
+  "expected": 20,
+  "claim": "TZ: kinds among 30 [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "confirmed.kind.destruction",
+  "expected": 4,
+  "claim": "TZ: kinds among 30"
+ },
+ {
+  "key": "confirmed.kind.wrong_change",
+  "expected": 6,
+  "claim": "TZ: kinds among 30"
+ },
+ {
+  "key": "registry_estimate.pct",
+  "expected": 24.6,
+  "claim": "TZ/III: registry estimate [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "registry_estimate.ci",
+  "expected": [
+   15.6,
+   34.4
+  ],
+  "claim": "TZ/III: 95% interval, seed 20261113, 10000 [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "stratum.legacy.harmful",
+  "expected": 18,
+  "claim": "TZ/III: 18 of 61 [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "stratum.legacy.determinable",
+  "expected": 61,
+  "claim": "TZ/III: 18 of 61"
+ },
+ {
+  "key": "stratum.modern.harmful",
+  "expected": 12,
+  "claim": "TZ/III: 12 of 82"
+ },
+ {
+  "key": "stratum.modern.determinable",
+  "expected": 82,
+  "claim": "TZ/III: 12 of 82"
+ },
+ {
+  "key": "without_gptoss.harmful",
+  "expected": 19,
+  "claim": "TZ/III: 19 of 66 [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "without_gptoss.determinable",
+  "expected": 66,
+  "claim": "TZ/III: 19 of 66"
+ },
+ {
+  "key": "harmful_all",
+  "expected": 51,
+  "claim": "TZ/III: harmful continuations [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "harmful_all.residual_yes",
+  "expected": 49,
+  "claim": "TZ/III: with violation in C [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "not_confirmed.determinable",
+  "expected": 48,
+  "claim": "TZ/III: unconfirmed determinable"
+ },
+ {
+  "key": "not_confirmed.harmful",
+  "expected": 20,
+  "claim": "TZ/III: of them harmful"
+ },
+ {
+  "key": "labels.agreement",
+  "expected": 169,
+  "claim": "TZ/II: agreement 169 of 200"
+ },
+ {
+  "key": "labels.kappa",
+  "expected": 0.63,
+  "claim": "TZ/II: Cohen kappa"
+ },
+ {
+  "key": "table2",
+  "expected": {
+   "Rule B | all harm": [
+    0.91,
+    0.41
+   ],
+   "Rule B | duplication": [
+    0.91,
+    0.75
+   ],
+   "Multiplicity test | all harm": [
+    0.95,
+    0.35
+   ],
+   "Multiplicity test | duplication": [
+    0.95,
+    0.64
+   ]
+  },
+  "claim": "TZ/Table II [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "rule_b.recall_modern",
+  "expected": 0.15,
+  "claim": "TZ/IV: recall 0.15 in the second stratum"
+ },
+ {
+  "key": "rule_b.misses",
+  "expected": 30,
+  "claim": "TZ/IV: 30 misses [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "rule_b.misses.not_duplication",
+  "expected": 23,
+  "claim": "TZ/IV: 23 destructions and wrong changes"
+ },
+ {
+  "key": "rule_b.misses.duplication",
+  "expected": 7,
+  "claim": "TZ/IV: 7 duplications [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "table4",
+  "expected": {
+   "Harmful writes matched": [
+    132,
+    100,
+    104,
+    118
+   ],
+   "  duplication (writes)": [
+    113,
+    96,
+    96,
+    110
+   ],
+   "  destruction (writes)": [
+    4,
+    0,
+    3,
+    3
+   ],
+   "  wrong change (writes)": [
+    15,
+    4,
+    5,
+    5
+   ],
+   "Recoveries fully matched": [
+    30,
+    14,
+    16,
+    18
+   ],
+   "  duplication (recoveries)": [
+    20,
+    14,
+    14,
+    16
+   ],
+   "  destruction (recoveries)": [
+    4,
+    0,
+    2,
+    2
+   ],
+   "  wrong change (recoveries)": [
+    6,
+    0,
+    0,
+    0
+   ],
+   "Required writes matched": [
+    null,
+    250,
+    254,
+    254
+   ],
+   "  episodes with such writes": [
+    null,
+    30,
+    30,
+    30
+   ]
+  },
+  "claim": "TZ/Table IV [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "cf.non_ambiguous",
+  "expected": [
+   95,
+   99,
+   113,
+   123
+  ],
+  "claim": "TZ/V-B: without ambiguous 95/99/113 of 123"
+ },
+ {
+  "key": "cf.required_episodes_without_harm",
+  "expected": 23,
+  "claim": "TZ/V-B: 23 of 30 without harm"
+ },
+ {
+  "key": "pilot.harm",
+  "expected": [
+   6,
+   6,
+   5,
+   4,
+   7
+  ],
+  "claim": "TZ/Table III: harm A-E"
+ },
+ {
+  "key": "pilot.byp_req",
+  "expected": [
+   "36/451",
+   "503/823",
+   "97/135",
+   "0/184"
+  ],
+  "claim": "TZ/Table III: bypass requests B-E"
+ },
+ {
+  "key": "corpus.runs_usable",
+  "expected": 13988,
+  "claim": "Intro: 13,988 runs"
+ },
+ {
+  "key": "corpus.fail_after_write",
+  "expected": 1897,
+  "claim": "Intro: 1,897 failed blocks"
+ },
+ {
+  "key": "corpus.rewrite_reissue_pct",
+  "expected": 70.6,
+  "claim": "Intro: 70.6%"
+ },
+ {
+  "key": "registry.n",
+  "expected": 1917,
+  "claim": "II: registry of 1,917"
+ },
+ {
+  "key": "registry.extra_vs_static",
+  "expected": 20,
+  "claim": "II: differs by 20"
+ },
+ {
+  "key": "registry.legacy.n",
+  "expected": 1403,
+  "claim": "II: 1,403 episodes"
+ },
+ {
+  "key": "registry.legacy.configs",
+  "expected": 27,
+  "claim": "II: 27 configurations"
+ },
+ {
+  "key": "registry.modern.n",
+  "expected": 514,
+  "claim": "II: 514 episodes"
+ },
+ {
+  "key": "registry.modern.configs",
+  "expected": 8,
+  "claim": "II: 8 configurations"
+ },
+ {
+  "key": "sample.models",
+  "expected": 10,
+  "claim": "Abstract/II: ten models"
+ },
+ {
+  "key": "not_confirmed",
+  "expected": 51,
+  "claim": "III: 51 without trace"
+ },
+ {
+  "key": "not_confirmed.no_state_change",
+  "expected": 49,
+  "claim": "III: 49 reached the server"
+ },
+ {
+  "key": "not_confirmed.not_in_log",
+  "expected": 2,
+  "claim": "III: 2 not in log"
+ },
+ {
+  "key": "undeterminable_partial",
+  "expected": 4,
+  "claim": "III: 4 snapshot failure"
+ },
+ {
+  "key": "table1",
+  "expected": {
+   "gpt-4-turbo": [
+    24,
+    8,
+    7,
+    0,
+    1
+   ],
+   "gpt-4o": [
+    22,
+    6,
+    5,
+    1,
+    0
+   ],
+   "llama3-70b": [
+    10,
+    3,
+    3,
+    0,
+    0
+   ],
+   "deepseekcoder-33b": [
+    4,
+    0,
+    0,
+    0,
+    0
+   ],
+   "gpt-oss-20b": [
+    77,
+    11,
+    4,
+    3,
+    4
+   ],
+   "other models": [
+    6,
+    2,
+    1,
+    0,
+    1
+   ],
+   "Sample": [
+    143,
+    30,
+    20,
+    4,
+    6
+   ]
+  },
+  "claim": "Table I [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "stratum.legacy.pct",
+  "expected": 29.5,
+  "claim": "III: 29.5% [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "stratum.modern.pct",
+  "expected": 14.6,
+  "claim": "III: 14.6%"
+ },
+ {
+  "key": "confirmed.shopping",
+  "expected": 136,
+  "claim": "III: 136 of 145 shopping"
+ },
+ {
+  "key": "not_confirmed.harmful.nonshop_write",
+  "expected": 15,
+  "claim": "III: 15 of 20 after file/mail/payment writes"
+ },
+ {
+  "key": "old3.harmful",
+  "expected": 17,
+  "claim": "III: 15 of 17 [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "old3.duplication",
+  "expected": 15,
+  "claim": "III: 15 of 17 [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "gptoss.harmful",
+  "expected": 11,
+  "claim": "III: 7 of 11"
+ },
+ {
+  "key": "gptoss.not_duplication",
+  "expected": 7,
+  "claim": "III: 7 of 11"
+ },
+ {
+  "key": "gptoss.destruction",
+  "expected": 3,
+  "claim": "III: in three, empties the cart"
+ },
+ {
+  "key": "gptoss.wrong_change",
+  "expected": 4,
+  "claim": "III: in four, wrong first-time write"
+ },
+ {
+  "key": "gptoss.sample_modern",
+  "expected": 86,
+  "claim": "III: 86 of 100"
+ },
+ {
+  "key": "modern_other.determinable",
+  "expected": 5,
+  "claim": "III: five determinable"
+ },
+ {
+  "key": "modern_other.harmful",
+  "expected": 1,
+  "claim": "III: one harmful"
+ },
+ {
+  "key": "harmful_confirmed.residual_yes",
+  "expected": 30,
+  "claim": "III: including all 30 confirmed [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "harmful_all.duplication_pct",
+  "expected": 55,
+  "claim": "IV: duplications form 55% [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "harmful_modern.duplication_pct",
+  "expected": 25,
+  "claim": "IV: only 25% in 2025-2026"
+ },
+ {
+  "key": "labels.first_empty_diff_now_harmful",
+  "expected": 7,
+  "claim": "IV: seven episodes first labeled harmless by an empty B-C difference"
+ },
+ {
+  "key": "pilot.n",
+  "expected": [
+   17,
+   17,
+   17,
+   10,
+   17
+  ],
+  "claim": "Table III: n"
+ },
+ {
+  "key": "pilot.resid",
+  "expected": [
+   8,
+   7,
+   7,
+   6,
+   8
+  ],
+  "claim": "Table III: residual"
+ },
+ {
+  "key": "pilot.byp_writes",
+  "expected": [
+   "16/168",
+   "11/80",
+   "21/38",
+   "0/129"
+  ],
+  "claim": "Table III: bypass writes"
+ },
+ {
+  "key": "pilot.harm_undeterminable",
+  "expected": [
+   0,
+   0,
+   0,
+   1,
+   1
+  ],
+  "claim": "Table III note: undeterminable in D and E"
+ },
+ {
+  "key": "pilot.E.rejections_followed",
+  "expected": [
+   14,
+   16
+  ],
+  "claim": "V-A: 14 of 16 rejections followed"
+ },
+ {
+  "key": "cf.controls_pass",
+  "expected": 179,
+  "claim": "V-B: controls pass in 179 of 200"
+ },
+ {
+  "key": "cf.controls_pass_harmful_confirmed",
+  "expected": 30,
+  "claim": "V-B: and in all 30 [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "cf.harmful_writes_ambiguous",
+  "expected": 9,
+  "claim": "V-B: 9 marked ambiguous [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "cf.early_matches",
+  "expected": [
+   85,
+   88,
+   102
+  ],
+  "claim": "V-B: 85 to 102 refer to the prefix or the failed block [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "cf.duplication_strict_pct",
+  "expected": 85,
+  "claim": "V-B: 85% of duplicated writes (strict)"
+ },
+ {
+  "key": "cf.ids_only_address_writes",
+  "expected": 13,
+  "claim": "V-B: copies of the same address (13 writes), only ids"
+ },
+ {
+  "key": "cf.destruction_lenient_only",
+  "expected": 3,
+  "claim": "V-B: destruction would match only without the flags: three writes"
+ },
+ {
+  "key": "cf.full.old3",
+  "expected": [
+   13,
+   13,
+   13,
+   17
+  ],
+  "claim": "V-B: 13 of 17 for gpt-4-turbo, gpt-4o, llama3-70b in every form [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "cf.full.gptoss",
+  "expected": [
+   0,
+   2,
+   4,
+   11
+  ],
+  "claim": "V-B: 0, 2 and 4 of 11 for gpt-oss-20b"
+ },
+ {
+  "key": "pilot.cf_matched",
+  "expected": [
+   67,
+   70,
+   111,
+   156
+  ],
+  "claim": "V-B: pilot 67, 70, 111 of 156"
+ },
+ {
+  "key": "cf.nonharmful_matched_confirmed",
+  "expected": [
+   847,
+   854,
+   854
+  ],
+  "claim": "V-B: 847 to 854 non-harmful writes matched [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "cf.required_apis",
+  "expected": [
+   "amazon.add_gift_wrapping_to_product",
+   "amazon.add_product_to_cart"
+  ],
+  "claim": "V-B: all are calls to two cart APIs"
+ },
+ {
+  "key": "pilot.relabel_agreement",
+  "expected": [
+   11,
+   16
+  ],
+  "claim": "VIII: 11 of 16 relabeled pilot continuations"
+ },
+ {
+  "key": "gptoss.confirmed_determinable",
+  "expected": 77,
+  "claim": "VIII: 77 of 143 confirmed"
+ },
+ {
+  "key": "models_2026.sample",
+  "expected": 9,
+  "claim": "VIII: 9 of 200 use models of 2026"
+ },
+ {
+  "key": "harmful_confirmed.runs",
+  "expected": 24,
+  "claim": "VIII: 24 runs [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "harmful_confirmed.tasks",
+  "expected": 22,
+  "claim": "VIII: 22 tasks [labels v4, 2026-11-15: numbers_trace CURRENT]"
+ },
+ {
+  "key": "labels.author_blind_sample_reproduced",
+  "expected": true,
+  "claim": "scripts/labels/build_human_tool.py draws the author's blind sample: 60 of the both-agree episodes (source starts with “both agree”), seed 20261115; the draw equals the slots of human_blind_labels.csv, in order"
+ },
+ {
+  "key": "labels.author_blind",
+  "expected": [
+   59,
+   60,
+   0.95
+  ],
+  "claim": "II: author blind audit 59 of 60, kappa 0.95 (60 of 161 both-agree episodes, seed 20261115)"
+ },
+ {
+  "key": "labels.author_review",
+  "expected": {
+   "agree": 48,
+   "unsure": [
+    "60",
+    "126",
+    "128",
+    "196"
+   ]
+  },
+  "claim": "II: author review of harmful continuations: 48 agree, 4 unsure (slots 60, 126, 128, 196)"
+ },
+ {
+  "key": "harmful_all.residual_undecidable",
+  "expected": [
+   "164",
+   "196"
+  ],
+  "claim": "III: 51 harmful, 49 with violation in C, 2 undeterminable (slots 164, 196)"
+ },
+ {
+  "key": "accounting.by_status",
+  "expected": {
+   "confirmed": [
+    145,
+    30,
+    113,
+    2
+   ],
+   "not_confirmed": [
+    51,
+    20,
+    28,
+    3
+   ],
+   "undeterminable_partial": [
+    4,
+    1,
+    3,
+    0
+   ]
+  },
+  "claim": "numbers_trace CURRENT III: accounting of 200 episodes [n, harmful, harmless, undeterminable]: confirmed 145 (30/113/2), not confirmed 51 (20/28/3), snapshot failure 4 (1/3/0)"
+ },
+ {
+  "key": "undeterminable_partial.failed_snapshot",
+  "expected": 4,
+  "claim": "numbers_trace CURRENT III: the 4 episodes of “snapshot failure” are the undeterminable ones (reason: failed snapshot A/B)"
+ },
+ {
+  "key": "confirmed.shopping.determinable",
+  "expected": {
+   "shopping": [
+    26,
+    135
+   ],
+   "other": [
+    4,
+    8
+   ]
+  },
+  "claim": "numbers_trace CURRENT III: shopping application: 26 of 135 determinable confirmed continuations harmful (other applications 4 of 8)"
+ },
+ {
+  "key": "confirmed.determinable.continuation_write",
+  "expected": {
+   "with_write": 123,
+   "of": 143,
+   "harmful_among": 30,
+   "harmful": 30
+  },
+  "claim": "numbers_trace CURRENT III: 123 of 143 determinable confirmed continuations contain a write call; all 30 harmful among them (blind_labels_random_input.csv, writes_after_B)",
+  "needs": "unpack"
+ },
+ {
+  "key": "table2.denominator",
+  "expected": {
+   "n": 195,
+   "yes": 51,
+   "no": 144
+  },
+  "claim": "numbers_trace CURRENT IV: Table II denominator: 195 sampled episodes with a determinable label (yes 51, no 144)"
+ }
+]
